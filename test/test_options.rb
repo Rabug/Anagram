@@ -28,7 +28,9 @@ class TestOptions < Test::Unit::TestCase
   context "specifying words and a dictionary" do
     should "return the words" do
       opts = Anagram::Options.new(["-d", "mydict", "word1", "word2"])
-      assert_equal ["word1", "word2"], opts.words_to_find
     end
   end      
 end
+
+
+
